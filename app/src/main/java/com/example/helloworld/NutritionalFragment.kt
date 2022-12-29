@@ -18,7 +18,6 @@ import kotlinx.android.synthetic.main.fragment_nutritional.*
 
 class NutritionalFragment : Fragment() {
 
-    lateinit var searchbtn: ImageButton
     private lateinit var healthAdapter: HealthAdapter
     private lateinit var input: String
     private lateinit var foodList: MutableList<FoodData>
@@ -37,15 +36,15 @@ class NutritionalFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-         healthAdapter = HealthAdapter(requireContext())
+        healthAdapter = HealthAdapter(requireContext())
 
         recyclerview_foodList = view.findViewById(R.id.rv_foodList)
         recyclerview_foodList.adapter = healthAdapter
 
 
         // clicked search button
-        searchbtn = view.findViewById(R.id.btn_searchFood)
-        searchbtn.setOnClickListener {
+
+        btn_searchFood.setOnClickListener {
             input = et_inputFood.text.toString()
 
             val thread = ApiFoodInfo(input)
@@ -59,5 +58,4 @@ class NutritionalFragment : Fragment() {
         }
     }
 
-
-    }
+}

@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/tab_fridge"
+        android:id="@+id/tab_write"
         android:enabled="true"
-        android:title="냉장고"/>
+        android:title="간단 기록하기" />
 
     <item
-        android:id="@+id/tab_share"
+        android:id="@+id/tab_calendar"
         android:enabled="true"
-        android:title="나눔"/>
+        android:title="캘린더 기록" />
 
     <item
-        android:id="@+id/tab_envlevel"
+        android:id="@+id/tab_nutritional"
         android:enabled="true"
-        android:title="환경 기여도"/>
+        android:title="영양성분 체크" />
 
     <item
-        android:id="@+id/tab_mypage"
+        android:id="@+id/tab_community"
         android:enabled="true"
-        android:title="마이페이지"/>
+        android:title="커뮤니티" />
 </menu>

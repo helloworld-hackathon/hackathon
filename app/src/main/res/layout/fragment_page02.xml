@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="326dp"
+        android:layout_height="87dp"
+        android:text="Q. 비만아 식단은 어떻게 구성하는 게 좋을까요? 무조건 식사량을 줄이는 게 좋을까요? "
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:text="Comments"
+            android:textColor="#FA7200"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="325dp"
+        android:layout_height="125dp"
+        android:layout_marginBottom="10dp"
+        android:text="A. 무턱대고 음식량을 줄이는 것은 성장애 장애를 줄 수 있기 때문에 개인별 필요 열량과 영양소를 고려 해야합니다. 비만 어린의 식단은 총 칼로리의 50~55%를 탄수화물, 20~25%를 단백질, 25~30%를 지방으로 구성하는 것이  좋습니다."
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="308dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="100dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="24dp"
+            android:background="@android:color/transparent"
+            android:padding="0sp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/like" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="200dp"
+            android:layout_weight="1"
+            android:text="Likes"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>
