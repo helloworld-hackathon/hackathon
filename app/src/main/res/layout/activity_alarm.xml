@@ -267,17 +267,17 @@
 
         <Button
             android:id="@+id/Alarm"
-            android:layout_width="121dp"
-            android:layout_height="50dp"
+            android:layout_width="160dp"
+            android:layout_height="66dp"
             android:layout_alignParentRight="true"
             android:layout_gravity="right"
             android:layout_marginEnd="25dp"
 
-            android:stateListAnimator="@null"
-            android:textColor="#71ABFF"
-            android:textSize="17sp"
-            android:text="오후 10:00"
             android:backgroundTint="@color/white"
+            android:stateListAnimator="@null"
+            android:text="오후 10:00"
+            android:textColor="#FA7200"
+            android:textSize="17sp"
             app:layout_constraintEnd_toEndOf="parent"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteY="5dp" />
