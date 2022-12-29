@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="326dp"
+        android:layout_height="114dp"
+        android:text="Q. 아이가 4살인데 여기저기 왔다 갔다 하고 잠시도 가만히 안 있어요. 다른 아이들이 얌전히 앉아서 책을 읽는 것을 볼 때마다 초조해져요. 주의력 결핍과잉행동장애 일까요?"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:text="Comments"
+            android:textColor="#FA7200"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="310dp"
+        android:layout_height="113dp"
+        android:layout_marginBottom="10dp"
+        android:text="A. 움직이기 좋아하는 것은 아이의 본성이에요. 일단 아이가 기고 걷는 것을 배우면 시야가 넓어져서 외부 세계를 탐색하기 시작해요. 이렇게 움직이는 과정에서 아이는 외부세계를 탐색하고 성장하게 된답니다."
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="308dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="100dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="24dp"
+            android:background="@android:color/transparent"
+            android:padding="0sp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/like" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="200dp"
+            android:layout_weight="1"
+            android:text="Likes"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>
