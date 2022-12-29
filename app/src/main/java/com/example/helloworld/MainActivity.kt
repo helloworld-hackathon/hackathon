@@ -100,7 +100,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
-
+//이동
     fun moveMainPage(user: FirebaseUser?) {
         if (user != null) {
             startActivity(
