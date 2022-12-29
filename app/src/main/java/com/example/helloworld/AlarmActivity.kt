@@ -22,7 +22,6 @@ import java.lang.reflect.Array.getInt
 
 class AlarmActivity : AppCompatActivity() {
 
-
     //알람 시간 변수
     var myampm: String = ""
     var myhour: Int = -1
