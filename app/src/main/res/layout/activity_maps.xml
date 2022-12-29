@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:maps_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity" />
+
+    <LinearLayout
+        android:id="@+id/maps_view"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_above="@+id/Menu_bar"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="0dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            maps_view:cardCornerRadius="10dp"
+            maps_view:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="8.8dp"
+                    android:layout_marginBottom="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center|left"
+                        android:text="카페 이름"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        maps_view:layout_constraintStart_toStartOf="parent"
+                        maps_view:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/field"
+                        android:layout_width="62dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginBottom="2dp"
+                        android:gravity="center|left"
+                        android:text="음식 종류"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        maps_view:layout_constraintBottom_toBottomOf="@+id/name"
+                        maps_view:layout_constraintStart_toEndOf="@+id/name"
+                        maps_view:layout_constraintTop_toTopOf="parent"
+                        maps_view:layout_constraintVertical_bias="0.84000003" />
+
+                    <TextView
+                        android:id="@+id/location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="64dp"
+                        android:gravity="center|left"
+                        android:text="위치"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        maps_view:layout_constraintBottom_toBottomOf="parent"
+                        maps_view:layout_constraintEnd_toEndOf="parent"
+                        maps_view:layout_constraintHorizontal_bias="0.0"
+                        maps_view:layout_constraintStart_toStartOf="parent"
+                        maps_view:layout_constraintTop_toBottomOf="@+id/name"
+                        maps_view:layout_constraintVertical_bias="0.933" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/Menu_bar"
+        android:layout_width="414dp"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="0dp"
+        android:contentDescription="TODO"/>
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        tools:ignore="MissingConstraints">
+
+    </LinearLayout>
+</RelativeLayout>

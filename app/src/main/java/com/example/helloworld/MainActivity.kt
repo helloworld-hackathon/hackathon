@@ -27,17 +27,17 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         bottom_navigation = findViewById(R.id.bottomNavigationView) //as BottomNavigationView
 
-        // bottomNavigationView 설정
-        bottom_navigation.setOnItemSelectedListener { item->
-            when(item.itemId){
-                R.id.tab_share -> {                    val shareFragment = NutritionalFragment()
-                    supportFragmentManager.beginTransaction().replace(R.id.main_content, shareFragment).commit()
-                    return@setOnItemSelectedListener true
-                }
-
-            }
-            return@setOnItemSelectedListener false
-        }
+//        // bottomNavigationView 설정
+//        bottom_navigation.setOnItemSelectedListener { item->
+//            when(item.itemId){
+//                R.id.tab_share -> {                    val shareFragment = NutritionalFragment()
+//                    supportFragmentManager.beginTransaction().replace(R.id.main_content, shareFragment).commit()
+//                    return@setOnItemSelectedListener true
+//                }
+//
+//            }
+//            return@setOnItemSelectedListener false
+//        }
 
     }
 }
